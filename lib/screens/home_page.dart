@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             SizedBox(
               width: double.infinity,
-              height: 500,
+              height: 700,
               child: (Global.allcontacts.isEmpty)
                   ? Container(
                       alignment: Alignment.center,
