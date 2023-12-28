@@ -28,8 +28,8 @@ class _HomePageState extends State<HomePage> {
               DrawerHeader(
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage("assets/images/person.png"),
-                      fit: BoxFit.cover),
+                      image: AssetImage('assets/images/person.png'),
+                      fit: BoxFit.contain),
                 ),
                 child: Container(),
               ),
