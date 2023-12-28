@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
             title[4],
             style: const TextStyle(color: Colors.black, fontSize: 25),
           ),
-          iconTheme: const IconThemeData(color: Colors.deepPurple, size: 30),
+          iconTheme: const IconThemeData(color: Colors.deepOrange, size: 30),
           actions: [
             IconButton(
               onPressed: () {
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.deepPurpleAccent,
+          backgroundColor: Colors.deepOrange,
           child: const Icon(
             Icons.add,
             color: Colors.white,
@@ -95,23 +95,23 @@ class _HomePageState extends State<HomePage> {
               child: (Global.allcontacts.isEmpty)
                   ? Container(
                       alignment: Alignment.center,
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
-                        children: const [
+                        children: [
                           Icon(
                             Icons.add_box,
-                            size: 100,
-                            color: MyColors.primarypurpleaccent,
+                            size: 70,
+                            color: MyColors.secorange,
                           ),
                           SizedBox(
-                            height: 20,
+                            height: 15,
                           ),
                           Text(
-                            "You Don't have any contacts yet",
+                            "You don't have any contacts yet",
                             style: TextStyle(
                               color: MyColors.primaryblack,
-                              fontSize: 23,
+                              fontSize: 21,
                             ),
                           ),
                         ],

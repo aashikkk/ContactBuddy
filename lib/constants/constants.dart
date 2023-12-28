@@ -16,6 +16,10 @@ class MyColors {
   static const primarygrey = Colors.grey;
   static const primarypurpleaccent = Colors.purpleAccent;
   static const primaryred = Colors.red;
+  static const primaryorange = Colors.deepOrange;
+  static const secorange = Colors.deepOrangeAccent;
+  static const lightorange = Colors.orange;
+  static const acorange = Colors.orangeAccent;
 }
 
 class MyRadius {

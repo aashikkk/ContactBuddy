@@ -104,7 +104,7 @@ class _DetailPageState extends State<DetailPage> {
                                 child: Text(
                                   buttonText[4],
                                   style: const TextStyle(
-                                      color: MyColors.primarydeeppurple),
+                                      color: MyColors.primaryred),
                                 ))
                           ],
                         );
@@ -124,7 +124,7 @@ class _DetailPageState extends State<DetailPage> {
               Navigator.of(context).pop();
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: MyColors.primarypurple,
+              backgroundColor: MyColors.acorange,
             ),
             child: Text(buttonText[1]),
           ),

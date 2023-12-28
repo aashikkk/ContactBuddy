@@ -54,14 +54,15 @@ class _AddNewState extends State<AddNew> {
                 children: [
                   CircleAvatar(
                     backgroundImage: (image != null) ? FileImage(image!) : null,
-                    backgroundColor: MyColors.primarydeeppurple,
+                    backgroundColor: MyColors.lightorange,
                     radius: 50,
                     child: Text(
                       (image != null) ? "" : "ADD",
+                      style: const TextStyle(color: MyColors.primarywhite),
                     ),
                   ),
                   FloatingActionButton(
-                    backgroundColor: MyColors.primarypurpleaccent,
+                    backgroundColor: MyColors.primaryorange,
                     onPressed: () async {
                       await showDialog(
                         context: context,
@@ -119,10 +120,7 @@ class _AddNewState extends State<AddNew> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const SizedBox(
-                          height: 20,
-                        ),
-                        const SizedBox(
-                          height: 5,
+                          height: 25,
                         ),
                         TextFormField(
                           controller: firstnamecontroller,
@@ -193,10 +191,7 @@ class _AddNewState extends State<AddNew> {
                               hintText: hintText[2]),
                         ),
                         const SizedBox(
-                          height: 15,
-                        ),
-                        const SizedBox(
-                          height: 5,
+                          height: 20,
                         ),
                         TextFormField(
                           controller: emailcontroller,
@@ -246,7 +241,7 @@ class _AddNewState extends State<AddNew> {
                                 }
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: MyColors.primarypurple,
+                                backgroundColor: MyColors.primaryorange,
                               ),
                               child: Text(buttonText[0],
                                   style: MyStyle.buttonText),
@@ -259,7 +254,7 @@ class _AddNewState extends State<AddNew> {
                                 Navigator.of(context).pop();
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: MyColors.primarydeeppurple,
+                                backgroundColor: MyColors.acorange,
                               ),
                               child: Text(buttonText[1],
                                   style: MyStyle.buttonText),
